@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>MultiArrays in JavaScript</title>
+    </head>
+    <body>
+        <h1>MultiArrays in JavaScript</h1>
+        <script>
+        var array=[
+            [1,"Mohit","Male","B.tech"],
+            [2,"uday","Male","B.tech"],
+            [3,"aaditya","Male","B.tech"],  
+            [4,"fenil","Male","B.tech"]
+        ];
+
+        document.write("<table border='1 px solid black'>")
+        for(i=0;i<array.length;i++){
+            document.write("<tr>")
+            for(j=0;j<array.length;j++){
+                document.write("<td>"+array[i][j]+"</td>")
+            }
+            document.write("</tr>")
+            document.write("<br>")
+        }
+        </script>
+    </body>
+</html>
