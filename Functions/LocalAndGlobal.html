@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Local And Global Variable In JavaScript</title>
+    </head>
+    <body>
+        <h1>Local And Global Variable In JavaScript</h1>
+        <script>
+                var a = 10 //global variable
+
+                function show(){
+                    var b = 20 //local variable
+                    document.write("global variable :" +a + "<br>");
+                    document.write("local variable :" +b + "<br>");
+                }
+                show();
+
+                document.write("global variable :" +a + "<br>");
+                document.write("local variable : " +b + "<br>"); // show error undefine variable of b
+                
+        </script>
+    </body>
+</html>

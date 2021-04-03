@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Arrays in JavaScript</title>
+    </head>
+    <body>
+        <h1>Arrays in JavaScript</h1>
+        <script>
+        var arr=[10,20,"Mohit",null]
+        document.write("<ul>")
+            for(i=0;i<arr.length;i++){
+                document.write("<li>")
+                document.write(arr[i]);
+                document.write("</li>")
+            }
+        document.write("</ul>")
+
+        document.write("<hr>")
+
+        var arr1=new Array();
+        for(var j=0;j<3;j++){
+            arr1[j]=prompt("Enter the value : )")
+        }
+
+        for(k=0;k<arr1.length;k++){
+                document.write("<li>")
+                document.write(arr1[k]);
+                document.write("</li>")
+            }
+
+        </script>
+    </body>
+</html>
