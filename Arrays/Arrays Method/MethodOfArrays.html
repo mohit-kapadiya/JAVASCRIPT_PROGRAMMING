@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Method Of Arrays in JavaScript</title>
+    </head>
+    <body>
+        <h1>Method Of Arrays in JavaScript</h1>
+        <script>
+            document.write("<h3> 1. Converting Arrays to Strings</h3>");
+            var fruits=['BANANA','MANGO','ORANGE','APPLE']
+            var convString =fruits.toString();
+            document.write(convString);
+    
+            document.write("<hr>");
+
+            document.write("<h3> 2. Join Method</h3>");
+            var fruits2=['BANANA','MANGO','ORANGE','APPLE']
+            var joinString =fruits2.join("*");
+            document.write(joinString);
+
+            document.write("<hr>");
+
+            document.write("<h3> 3. The pop() method removes the last element from an array.</h3>");
+            var fruits3=['BANANA','MANGO','ORANGE','APPLE'];
+            var popString =fruits3.pop();
+            document.write(popString + "  (should be remove)"+"<br>");
+            document.write(fruits3.toString());
+
+            document.write("<hr>");
+
+            document.write("<h3> 4. The push() method adds a new element to an array (at the end):</h3>");
+
+            var fruits4=['BANANA','MANGO','ORANGE','APPLE'];
+            var pushString =fruits4.push("KIWI");
+            document.write(fruits4.toString());
+
+            document.write("<hr>");
+
+            document.write("<h3>5. The shift() method removes the first array element and shifts all other elements to a lower index.</h3>");
+
+            var fruits5=['BANANA','MANGO','ORANGE','APPLE'];
+            var shiftString =fruits5.shift();
+            document.write(shiftString + " (This String should be out.)"+"<br>")
+            document.write(fruits5.toString());
+
+            document.write("<hr>");
+
+            document.write("<h3> 6. The unshift() method adds new elements to the beginning of an array.</h3>");
+            var fruits6=['BANANA','MANGO','ORANGE','APPLE'];   
+            var unshiftString =fruits6.unshift("KIWI");    
+            document.write(unshiftString + " (Return a new array length)"+"<br>")
+            document.write(fruits6.toString());  
+            
+            document.write("<hr>");
+
+            document.write("<h3> 7. Changing Elements</h3>");
+            var fruits7=['BANANA','MANGO','ORANGE','APPLE'];   
+            fruits7[0]='KIWI';
+            document.write(fruits7.toString());  
+
+            document.write("<hr>");
+
+            document.write("<h3> 7. Delete Elements</h3>");
+            var fruits8=['BANANA','MANGO','ORANGE','APPLE'];   
+            delete fruits8[2];
+            document.write(fruits8.toString());
+            
+            
+            document.write("<hr>");
+
+            document.write("<h3> 8. The splice() method can be used to add new items to an array:</h3>");
+            var fruits9=['BANANA','MANGO','ORANGE','APPLE'];   
+            fruits9.splice(2,0,"LEMON","KIWI");
+            document.write(fruits9);
+
+            document.write("<hr>");
+            
+            
+            document.write("<h3> 9. The splice() method can be used to remove items to first of  an array:</h3>");
+            var fruits10=['BANANA','MANGO','ORANGE','APPLE'];   
+            var removeElem =fruits10.splice(0,1);
+            document.write(removeElem + ": Remove Element"+"<br>")
+            document.write(fruits10);
+
+
+            document.write("<hr>");
+
+            document.write("<h3> 10. Merging (Concatenating) Two  Arrays</h3>");
+            var girls=['AISH','SURBHI','POOJA']
+            var boys=['MOHIT','UDAY','ADITYA']
+            var students = girls.concat(boys);
+            document.write(students);
+
+            document.write("<hr>");
+
+            document.write("<h3> 11. Merging (Concatenating) Three Arrays</h3>");
+
+            var number = [10,20,30,40,50];
+            var character  = ['A','B','C','D','E'];
+            var symbol = ['@','#','$','%','&'];
+
+            var text = number.concat(symbol,character   );
+            document.write(text.toString());
+
+            document.write("<hr>");
+            document.write("<h3> 12. The slice() method slices out a piece of an array into a new array.</h3>");
+            var fruits11 = ["BANANA", "ORANGE", "LEMON", "APPLE", "MANGO"];
+            var citrus = fruits11.slice(1);
+            document.write(citrus + "<br>");
+
+            var citrus2 = fruits11.slice(1,3);
+            document.write(citrus2 + "<br>");
+
+            var citrus3 = fruits11.slice(2,3);
+            document.write(citrus3 + "<br>");
+
+            document.write(fruits11.toString())
+            document.write("<p>Slice method can not be delete the any object")
+            
+            
+
+
+
+
+
+          
+
+            
+
+
+
+
+            
+
+            
+
+        </script>
+    </body>
+</html>
